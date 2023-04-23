@@ -34,7 +34,7 @@ services:
 
   pgagent:
     image: chiavegatto/postgres-pgagent:latest
-    entrypoint: /bin/sh -c "/tmp/wait-for-it.sh postgres:5432 --timeout=30 && PGPASSWORD='123456' psql -U postgres -h postgres -p 5432 -d neygift -c 'CREATE EXTENSIO$
+    entrypoint: /bin/sh -c "/tmp/wait-for-it.sh postgres:5432 --timeout=30 && PGPASSWORD='123456' psql -U postgres -h postgres -p 5432 -d backcoin -c 'CREATE EXTENSIO$
     environment:
       - TIMEZONE=Asia/Tehran
 
